@@ -1,0 +1,44 @@
+{
+  "name": "react-digits",
+  "version": "0.1.0",
+  "main": "./lib/ReactDigits.js",
+  "dist": "dist",
+  "description": "Using Digits for web inside a React application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnSavvides/react-digits.git"
+  },
+  "contributors": [{
+    "name": "Andreas Savvides",
+    "email": "andreas@twitter.com"
+  }],
+  "keywords": [
+    "react",
+    "digits",
+    "twitter",
+    "phone",
+    "login"
+  ],
+  "license": "MIT",
+  "private": false,
+  "src": "src",
+  "test": "test",
+  "mainInput": "ReactDigits",
+  "mainOutput": "main",
+  "dependencies": {
+    "react": "^0.13.3",
+    "whatwg-fetch": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-webpack": "^1.0.10",
+    "load-grunt-tasks": "^3.2.0",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
