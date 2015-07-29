@@ -105,7 +105,7 @@ export default class ReactDigits extends React.Component {
         return (
             <div>
                 <div id="blurb" style={blurbStyle}>
-                    Login using <a href="https://get.digits.com/">Digits</a>, using just your phone number
+                    Log in with <a href="https://get.digits.com/">Digits</a>, using just your phone number
                 </div>
                 <div id="search-button" style={style} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)} onClick={this.onClick.bind(this)}>Log in</div>
             </div>
