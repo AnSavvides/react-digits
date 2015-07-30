@@ -1,6 +1,6 @@
 # Digits with React
 
-[Digits](https://get.digits.com/) is a free phone-number-based log in solution. This repository showcases how you can use Digits in a [React application](http://facebook.github.io/react/).
+[Digits](https://get.digits.com/) is a free phone-number-based log in solution. This repository showcases how you can use Digits in a [React application](http://facebook.github.io/react/). Using [ES6](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf) with the help of [Babel](http://babeljs.io/) - because as my friend [Bob](https://twitter.com/bobbyrenwick) says, "It's like living in the future".
 
 ## Getting started
 
