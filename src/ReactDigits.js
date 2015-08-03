@@ -2,7 +2,7 @@
 
 import React from "react";
 import Digits from "digits";
-import fetch from "whatwg-fetch";
+import "whatwg-fetch";
 
 export default class ReactDigits extends React.Component {
 
@@ -55,7 +55,7 @@ export default class ReactDigits extends React.Component {
 
         // Let's assume there exists an endpoint where you pass
         // this information onto in order to validate the user.
-        fetch("/user/verify", {
+        window.fetch("/user/verify", {
             method: "post",
             headers: {
                 "Accept": "application/json",
