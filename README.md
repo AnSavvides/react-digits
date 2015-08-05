@@ -18,6 +18,8 @@ grunt watch
 
 Now open [`src/ReactDigits.js`](src/ReactDigits.js) and enter your consumer key inside the `componentWillMount` function where we first initialize Digits.
 
+You can find your consumer key in your [Fabric web dashboard](https://fabric.io/dashboard) under the Twitter Kit tab. Note that Digits does not work with keys created from [apps.twitter.com](apps.twitter.com).
+
 ### Running a server in another terminal
 
 ```bash
