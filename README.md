@@ -41,4 +41,4 @@ Have a look at the [issue tracker](https://github.com/AnSavvides/react-digits/is
 
 ## License
 
-MIT
+[MIT](LICENSE)
