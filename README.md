@@ -20,10 +20,25 @@ Now open [`src/ReactDigits.js`](src/ReactDigits.js) and enter your consumer key 
 
 You can find your consumer key in your [Fabric web dashboard](https://fabric.io/dashboard) under the Twitter Kit tab. Note that Digits does not work with keys created from [apps.twitter.com](apps.twitter.com).
 
-### Running a server in another terminal
+### Running the Server
 
+##### Python
 ```bash
+# install pre-requisites
+pip install -r requirements.pip
+
+# start the server (in a separate tab)
 python server.py
+```
+
+##### Ruby
+```bash
+# install pre-requisites
+gem install bundler
+bundle install
+
+# start the server (in a separate tab)
+ruby server.rb
 ```
 
 Head over to `localhost:5000` and you should be able to see this code in action; try and log in using Digits!
