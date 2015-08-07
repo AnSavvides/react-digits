@@ -63,6 +63,8 @@ export default class ReactDigits extends React.Component {
             },
             body: JSON.stringify(data)
         }).then(finalResponse => {
+            return finalResponse.json();
+        }).then(jsonResponse => {
             // Handle the final response and change into
             // whatever state you need to depending on
             // if the user has been validated or not.
