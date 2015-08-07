@@ -1,16 +1,12 @@
 "use strict";
 
 import React from "react";
+import Radium from "radium";
 import Digits from "digits";
 import "whatwg-fetch";
 
+@Radium
 export default class ReactDigits extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = { buttonOpacity: 0.8 };
-    }
 
     componentWillMount() {
         // This is the consumer key that Fabric
@@ -21,18 +17,6 @@ export default class ReactDigits extends React.Component {
         // keys created from apps.twitter.com.
         Digits.init({
             consumerKey: ""
-        });
-    }
-
-    onMouseOver() {
-        this.setState({
-            buttonOpacity: 1
-        });
-    }
-
-    onMouseOut() {
-        this.setState({
-            buttonOpacity: 0.8
         });
     }
 
@@ -90,14 +74,19 @@ export default class ReactDigits extends React.Component {
         // this as you please. If you aren't a fan of inline
         // styles, feel free to go ahead and use CSS.
         const style = {
-            display: "inline-block",
-            padding: "15px",
-            borderRadius: "3px",
-            backgroundColor: "#55acee",
-            opacity: this.state.buttonOpacity,
-            border: "1px solid #3b88c3",
-            color: "#fff",
-            cursor: "pointer",
+            base: {
+                display: "inline-block",
+                padding: "15px",
+                borderRadius: "3px",
+                backgroundColor: "#55acee",
+                opacity: "0.8",
+                border: "1px solid #3b88c3",
+                color: "#fff",
+                cursor: "pointer",
+                ":hover": {
+                    opacity: "1"
+                }
+            }
         };
 
         const blurbStyle = {
@@ -109,7 +98,7 @@ export default class ReactDigits extends React.Component {
                 <div id="blurb" style={blurbStyle}>
                     Log in with <a href="https://get.digits.com/">Digits</a>, using just your phone number
                 </div>
-                <div id="search-button" style={style} onMouseOver={this.onMouseOver.bind(this)} onMouseOut={this.onMouseOut.bind(this)} onClick={this.onClick.bind(this)}>Log in</div>
+                <div id="search-button" style={style.base} onClick={this.onClick.bind(this)}>Log in</div>
             </div>
         );
     }
