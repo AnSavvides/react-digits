@@ -1,6 +1,6 @@
 {
   "name": "react-digits",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/ReactDigits.js",
   "dist": "dist",
   "description": "Using Digits for web inside a React application",
