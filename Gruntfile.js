@@ -25,7 +25,10 @@ module.exports = function (grunt) {
                         {
                             test: /\.js$/,
                             exclude: /node_modules/,
-                            loader: "babel-loader"
+                            loader: "babel-loader",
+                            query: {
+                                optional: ["es7.decorators"]
+                            }
                         },
                         {
                             test: /\.css$/,

@@ -8,10 +8,12 @@
     "type": "git",
     "url": "git+https://github.com/AnSavvides/react-digits.git"
   },
-  "contributors": [{
-    "name": "Andreas Savvides",
-    "email": "andreas@twitter.com"
-  }],
+  "contributors": [
+    {
+      "name": "Andreas Savvides",
+      "email": "andreas@twitter.com"
+    }
+  ],
   "keywords": [
     "react",
     "digits",
@@ -26,6 +28,7 @@
   "mainInput": "ReactDigits",
   "mainOutput": "main",
   "dependencies": {
+    "radium": "^0.13.7",
     "react": "^0.13.3",
     "whatwg-fetch": "^0.9.0"
   },
