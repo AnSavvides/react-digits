@@ -2,10 +2,11 @@ import requests
 import json
 
 from flask import Flask
+from flask import Response
 from flask import request
 from flask import abort
 
-app = Flask("ReactDigitsServer", static_url_path="", static_folder="dist")
+app = Flask("ReactDigitsServer", static_url_path="", static_folder="public")
 app.add_url_rule("/", "root", lambda: app.send_static_file("index.html"))
 app.add_url_rule("/dist/*", "dist", lambda: app.send_static_file("dist/dist.js"))
 
