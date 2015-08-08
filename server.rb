@@ -11,6 +11,10 @@ get '/' do
   send_file 'index.html'
 end
 
+get '/dist/dist.js' do
+  send_file 'dist/dist.js'
+end
+
 post '/user/verify' do
   data = MultiJson.load(request.body.read)
 
@@ -24,5 +28,6 @@ post '/user/verify' do
 
   halt res.code.to_i, 'Error! Request failed.' unless res.code == '200'
 
-  MultiJson.dump(res.body)
+  content_type :json
+  res.body
 end
