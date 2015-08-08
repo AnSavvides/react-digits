@@ -8,11 +8,11 @@ configure do
 end
 
 get '/' do
-  send_file 'index.html'
+  send_file 'public/index.html'
 end
 
 get '/dist/dist.js' do
-  send_file 'dist/dist.js'
+  send_file 'public/dist/dist.js'
 end
 
 post '/user/verify' do
