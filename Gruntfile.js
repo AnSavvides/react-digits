@@ -12,7 +12,7 @@ module.exports = function (grunt) {
             options: {
                 entry: "./src/ReactDigits.js",
                 output: {
-                    path: "./dist/",
+                    path: "./public/dist/",
                     filename: "dist.js",
                 },
                 stats: {
